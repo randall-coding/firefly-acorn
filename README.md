@@ -74,7 +74,7 @@ Register with email and password and then you'll see the firefly dashboard.
 <img width="1082" alt="293944958-04c0763a-c361-43fe-b5a7-248ca41709fc" src="https://github.com/randall-coding/firefly-acorn/assets/39175191/c5bea521-0150-43af-8c66-4de7fc1c7d84">
 
 ## Conclusion
-That's all there is to it.  We've now got a Firefly server up and running from an acorn image.
+We've now got a Firefly server up and running from an acorn image.
 For more detailed instructions on working with your Firefly server see the documentation in the section below.
 
 ## References
