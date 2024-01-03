@@ -55,24 +55,24 @@ Next build and run.
 
 `acorn build -t firefly`
 
-`acorn run -s firefly:firefly -n firefly firefly`
+`acorn run -s firefly-mariadb:firefly-mariadb -n firefly firefly`
 
 Visit your acorn dashboard to see if your deployment was successful.
 
 Click on the firefly deployment, and find the endpoint section on the right side panel.  This is your firefly instance link.
 
-![firefly_acorn_ui]()
+![firefly_acorn_ui](https://github.com/randall-coding/firefly-acorn/assets/39175191/4f2963e9-47d7-475a-be65-2a579419c761)
 
-![firefly_endpoint]()
+![firefly_endpoints](https://github.com/randall-coding/firefly-acorn/assets/39175191/ac24a607-1b91-4089-ae8b-8075a91c06df)
 
 ## Configure Firefly
 After you deploy the acorn successfully you will see a page like this when you visit the acorn URL:
-<img width="606" alt="image" src="">
+<img width="606" alt="293944511-665104e4-8fa3-4d6f-b72f-95491de28eba" src="https://github.com/randall-coding/firefly-acorn/assets/39175191/7d789e76-d1af-4167-b69d-5e6e3ddf810b">
+
 
 Register with email and password and then you'll see the firefly dashboard.
 
-<img width="1082" alt="image" src="">
-
+<img width="1082" alt="293944958-04c0763a-c361-43fe-b5a7-248ca41709fc" src="https://github.com/randall-coding/firefly-acorn/assets/39175191/c5bea521-0150-43af-8c66-4de7fc1c7d84">
 
 To further configure Firefly please go to the Firefly's official doc.
 
