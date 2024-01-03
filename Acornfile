@@ -1,0 +1,39 @@
+containers: {
+    firefly: {
+        image: "fireflyiii/core:latest"
+        env: {
+            APP_KEY: "SomeRandomStringOf32CharsExactly"
+            DB_CONNECTION: "mysql"
+            DB_HOST: "@{service.mariadb.address}"
+            DB_PORT: "3306"
+            DB_DATABASE: "firefly"
+            DB_USERNAME: "@{service.mariadb.secrets.user.username}"
+            DB_PASSWORD: "@{service.mariadb.secrets.user.password}"
+            STATIC_CRON_TOKEN: "hRiYGguWRK5eGERpiPgGbg/f1K8WUPyQ"
+        }
+        ports: {
+            publish: ["8080/http"]
+        }
+        memory: 1Gi
+    }
+
+    cron: {
+        image: "alpine:3.19.0"
+        env: {
+            STATIC_CRON_TOKEN: "hRiYGguWRK5eGERpiPgGbg/f1K8WUPyQ"
+        }
+        cmd: ["/bin/sh", "-c", "echo \"0 3 * * * wget -qO- http://firefly:8080/api/v1/cron/hRiYGguWRK5eGERpiPgGbg/f1K8WUPyQ\" | crontab - && crond -f -L /dev/stdout"]
+    }
+}
+
+services: mariadb: {
+    image: "ghcr.io/acorn-io/mariadb:v10.#.#-#"
+    serviceArgs: {
+        dbName: "firefly"
+    }
+    secrets: ["firefly-mariadb: user"]
+}
+
+secrets: "firefly-mariadb": {
+    external: "firefly-mariadb"
+}
