@@ -1,4 +1,4 @@
-# Launch your own accounting server
+# Launch your own accounting and invoicing server
 ## Firefly III
 Firefly III is an open-source personal finance manager that enables users to track transactions, manage budgets, and gain insights into their financial activities. It supports features like multiple currencies and recurring transactions.
 
