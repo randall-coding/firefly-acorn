@@ -1,4 +1,4 @@
-# Launch your own Firefly 3 server
+# Launch your own accounting server
 ## Firefly III
 Firefly III is an open-source personal finance manager that enables users to track transactions, manage budgets, and gain insights into their financial activities. It supports features like multiple currencies and recurring transactions.
 
@@ -66,19 +66,16 @@ Click on the firefly deployment, and find the endpoint section on the right side
 ![firefly_endpoints](https://github.com/randall-coding/firefly-acorn/assets/39175191/ac24a607-1b91-4089-ae8b-8075a91c06df)
 
 ## Configure Firefly
-After you deploy the acorn successfully you will see a page like this when you visit the acorn URL:
+After you deploy the acorn you will see a page like this when you visit the acorn URL:
 <img width="606" alt="293944511-665104e4-8fa3-4d6f-b72f-95491de28eba" src="https://github.com/randall-coding/firefly-acorn/assets/39175191/7d789e76-d1af-4167-b69d-5e6e3ddf810b">
-
 
 Register with email and password and then you'll see the firefly dashboard.
 
 <img width="1082" alt="293944958-04c0763a-c361-43fe-b5a7-248ca41709fc" src="https://github.com/randall-coding/firefly-acorn/assets/39175191/c5bea521-0150-43af-8c66-4de7fc1c7d84">
 
-To further configure Firefly please go to the Firefly's official doc.
-
 ## Conclusion
 That's all there is to it.  We've now got a Firefly server up and running from an acorn image.
-For more detailed instructions on working with your Firefly server see the getting started and configuration documentation.
+For more detailed instructions on working with your Firefly server see the documentation in the section below.
 
 ## References
 * [Firefly documentation](https://docs.firefly-iii.org/?mtm_campaign=firefly-iii-org&mtm_kwd=top-link)
